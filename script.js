@@ -9,10 +9,6 @@ function palindrome(str){
 			break;
 		}
 	}
-	if(flag==true){
-		return "false"
-	}else{
-		return "true"
-	}
+	return !flag
 }
 module.exports = palindrome
