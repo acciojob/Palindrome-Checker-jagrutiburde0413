@@ -10,4 +10,5 @@ function palindrome(str){
 	}
 	return "true"
 }
+console.log(palindrome(a))
 module.exports = palindrome
