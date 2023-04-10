@@ -1,14 +1,21 @@
 // complete the given function
 
 function palindrome(str){
-    let str1=str.toLowerCase();
-	let n=str1.length;
-	if(let i=0;i<n;i++){
-		if(str1[i]!==str1[n-i-1]){
-			return "false"
+    let flag=0;
+	let str=str.toLowerCase()
+	for(let i=0;i<=str.length/2 && str.length!=0;i++){
+		if(str[i]!=str[str.length-i-1]){
+			flag=1;
+			break;
 		}
 	}
-	return "true"
+	if(flag==1){
+		return "NO"
+	}else{
+		return "YES"
+	}
 }
-console.log(palindrome(a))
+
+}
+
 module.exports = palindrome
