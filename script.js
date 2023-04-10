@@ -2,7 +2,7 @@
 
 function palindrome(str){
     let flag=0;
-	let str=str.toLowerCase()
+	str=str.toLowerCase()
 	for(let i=0;i<=str.length/2 && str.length!=0;i++){
 		if(str[i]!=str[str.length-i-1]){
 			flag=1;
@@ -10,12 +10,9 @@ function palindrome(str){
 		}
 	}
 	if(flag==1){
-		return "NO"
+		return "false"
 	}else{
-		return "YES"
+		return "true"
 	}
 }
-
-
-
 module.exports = palindrome
